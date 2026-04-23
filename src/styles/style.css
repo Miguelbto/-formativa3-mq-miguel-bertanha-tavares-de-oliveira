@@ -81,28 +81,18 @@ header h1 {
   font-size: 1.2rem;
 }
 
-/* =========================================
-   MISSÕES DE RESPONSIVIDADE (MEDIA QUERIES)
-   ALUNO, CRIE SUAS REGRAS ABAIXO:
-   ========================================= */
-
-/* Missão 1 e 2: Ponto de quebra para TABLETS (Largura máxima de 768px) */
-/* Dica M2: Capture a .grid-pacotes e altere as colunas do template para repetir apenas 2 vezes (1fr) */
-
-/* Missão 3, 4 e 5: Ponto de quebra para SMARTPHONES (Largura máxima de 480px) */
-/* Dica M4: Capture a .grid-pacotes e mude para 1 coluna (1fr). Capture o header, mude a direção do flex para coluna e centralize (text-align) */
-/* Dica M5: Capture a .dica-desktop e faça ela desaparecer da tela usando a propriedade de exibição apropriada! */
 
 
 
-@media (max-width: 768px) {
+
+@media (max-width: 768px) and (orientation: landscape)  {
   .grid-pacotes {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px)  {
   .grid-pacotes {
     grid-template-columns: 1fr;
   }
